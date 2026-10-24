@@ -1,0 +1,561 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#061724">
+  <meta name="description" content="Leena Traders supplies freshwater fish wholesale from Andhra Pradesh to markets across India.">
+  <title>Leena Traders | Freshwater Fish. Trusted Supply.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- GLOBAL MOUSE-FOLLOW FISH -->
+  <div class="cursor-fish" id="cursorFish" aria-hidden="true">
+    <svg viewBox="0 0 100 54" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="cursorFishBody" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#c5fff4"/>
+          <stop offset="45%" stop-color="#35d6c4"/>
+          <stop offset="100%" stop-color="#087e91"/>
+        </linearGradient>
+        <filter id="cursorFishGlow" x="-50%" y="-50%" width="200%" height="200%">
+          <feGaussianBlur stdDeviation="2.5"/>
+        </filter>
+      </defs>
+      <ellipse cx="49" cy="29" rx="31" ry="15" fill="#35d6c4" opacity=".4" filter="url(#cursorFishGlow)"/>
+      <path d="M24 27 L5 10 Q9 26 5 43 L25 32Z" fill="#35d6c4" stroke="#a1f4e7" stroke-width="1"/>
+      <path d="M20 27 C30 7 58 8 76 26 C60 46 34 46 20 31Z" fill="url(#cursorFishBody)" stroke="#d9fff7" stroke-width="1"/>
+      <path d="M39 17 Q49 4 61 16 L51 22Z" fill="#8cf2e4" stroke="#35d6c4" stroke-width="1"/>
+      <path d="M35 22 Q41 28 35 34 M46 19 Q53 27 46 36 M57 20 Q64 27 57 34" fill="none" stroke="#eafffb" stroke-opacity=".65" stroke-width="1"/>
+      <circle cx="69" cy="23" r="3.5" fill="#06202b"/>
+      <circle cx="70" cy="22" r="1.2" fill="#fff"/>
+      <path d="M76 29 L83 30" stroke="#eafffb" stroke-width="1.5" stroke-linecap="round"/>
+    </svg>
+  </div>
+
+  <!-- CINEMATIC VIDEO INTRO -->
+  <div class="video-intro" id="intro">
+    <video class="intro-video" id="introVideo" autoplay muted playsinline preload="auto">
+      <source src="images/fish-intro.mp4" type="video/mp4">
+    </video>
+    <div class="video-intro-shade"></div>
+    <div class="video-intro-brand">
+      <span>LEENA TRADERS</span>
+      <small>ANDHRA PRADESH · INDIA</small>
+    </div>
+    <div class="video-intro-caption">
+      <p>FROM OUR WATERS</p>
+      <span>FRESHWATER FISH · TRUSTED SUPPLY</span>
+    </div>
+    <button class="video-intro-skip" id="skipIntro" type="button">SKIP INTRO ↗</button>
+    <div class="video-intro-transition" id="introTransition"></div>
+  </div>
+
+  <div class="announcement">ANDHRA PRADESH ORIGINS <span>·</span> WHOLESALE FISH SUPPLY ACROSS INDIA</div>
+
+  <!-- HEADER -->
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="#home" aria-label="Leena Traders home">
+      <span class="brand-mark">LT</span>
+      <span class="brand-name">LEENA <strong>TRADERS</strong></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <nav class="nav-links" id="navigation" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#products">Our Fish</a>
+      <a href="#story">Our Story</a>
+      <a href="#distribution">Distribution</a>
+      <a class="nav-cta" href="#enquiry">Wholesale Enquiry ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+
+      <!-- FLOATING AQUATIC BACKGROUND -->
+      <div class="aquatic-atmosphere" aria-hidden="true">
+        <span class="water-bubble bubble-1"></span>
+        <span class="water-bubble bubble-2"></span>
+        <span class="water-bubble bubble-3"></span>
+        <span class="water-bubble bubble-4"></span>
+        <span class="water-bubble bubble-5"></span>
+        <span class="water-bubble bubble-6"></span>
+
+        <span class="water-glint glint-1"></span>
+        <span class="water-glint glint-2"></span>
+        <span class="water-glint glint-3"></span>
+
+        <span class="aqua-leaf leaf-1">〰</span>
+        <span class="aqua-leaf leaf-2">〰</span>
+
+        <svg class="ambient-fish ambient-fish-one" viewBox="0 0 160 75" fill="none">
+          <path d="M25 38 C49 7 101 10 125 38 C101 66 49 68 25 38Z" fill="#22BDBB" fill-opacity=".13" stroke="#078FA9" stroke-opacity=".28"/>
+          <path d="M29 38 L3 15 L8 38 L3 61Z" fill="#078FA9" fill-opacity=".16"/>
+          <path d="M64 20 Q76 38 64 55 M78 17 Q90 38 78 58" stroke="#078FA9" stroke-opacity=".17" stroke-width="2"/>
+          <circle cx="110" cy="32" r="3" fill="#078FA9" fill-opacity=".45"/>
+        </svg>
+
+        <svg class="ambient-fish ambient-fish-two" viewBox="0 0 160 75" fill="none">
+          <path d="M25 38 C49 7 101 10 125 38 C101 66 49 68 25 38Z" fill="#FF9D9D" fill-opacity=".11" stroke="#E98C9D" stroke-opacity=".3"/>
+          <path d="M29 38 L3 15 L8 38 L3 61Z" fill="#E98C9D" fill-opacity=".15"/>
+          <path d="M64 20 Q76 38 64 55 M78 17 Q90 38 78 58" stroke="#E98C9D" stroke-opacity=".18" stroke-width="2"/>
+          <circle cx="110" cy="32" r="3" fill="#E98C9D" fill-opacity=".45"/>
+        </svg>
+      </div>
+
+      <div class="hero-image" aria-hidden="true"></div>
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-orb" aria-hidden="true"></div>
+
+      <!-- INTERACTIVE HOMEPAGE FISH -->
+      <div class="hero-fish-layer" id="heroFishLayer" aria-hidden="true">
+        <div class="hero-fish" id="heroFish">
+          <svg viewBox="0 0 360 180" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="fishBody" x1="0" y1="0" x2=".8" y2="1">
+                <stop offset="0" stop-color="#e9fff9"/>
+                <stop offset=".25" stop-color="#8edfd8"/>
+                <stop offset=".6" stop-color="#368f9e"/>
+                <stop offset="1" stop-color="#071e32"/>
+              </linearGradient>
+              <linearGradient id="fishFin" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#9df8e7"/>
+                <stop offset="1" stop-color="#14768b" stop-opacity=".25"/>
+              </linearGradient>
+              <linearGradient id="fishBelly" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#c9f2e9"/>
+                <stop offset="1" stop-color="#659eaa"/>
+              </linearGradient>
+              <filter id="fishShadow" x="-40%" y="-40%" width="180%" height="180%">
+                <feGaussianBlur stdDeviation="5"/>
+              </filter>
+            </defs>
+            <ellipse cx="174" cy="139" rx="112" ry="13" fill="#020a12" opacity=".35" filter="url(#fishShadow)"/>
+            <path d="M83 85 C52 58 27 40 12 31 C18 64 29 83 52 93 C28 106 19 125 13 148 C44 137 66 119 88 102Z" fill="url(#fishFin)" stroke="#6bd8d1" stroke-width="2"/>
+            <path d="M102 66 C124 43 149 29 186 29 C170 46 153 59 137 73Z" fill="url(#fishFin)" stroke="#7be4d8" stroke-width="2"/>
+            <path d="M115 113 C133 132 159 145 186 146 C166 127 151 115 137 106Z" fill="url(#fishFin)" stroke="#6bd8d1" stroke-width="2"/>
+            <path d="M72 89 C96 51 151 42 208 54 C237 60 258 75 275 88 C255 108 231 121 201 127 C148 139 100 123 72 101 C65 97 65 93 72 89Z" fill="url(#fishBody)" stroke="#a1f4e7" stroke-width="2"/>
+            <path d="M82 100 C118 119 163 127 201 115 C223 108 242 99 257 90 C237 119 212 130 183 133 C140 137 106 122 82 100Z" fill="url(#fishBelly)" opacity=".82"/>
+            <g fill="none" stroke="#d6fff6" stroke-opacity=".35" stroke-width="1.5">
+              <path d="M111 76 Q125 88 111 100"/>
+              <path d="M133 68 Q148 83 133 104"/>
+              <path d="M157 64 Q173 82 157 109"/>
+              <path d="M181 62 Q197 82 181 112"/>
+              <path d="M204 65 Q221 83 204 107"/>
+              <path d="M226 72 Q241 87 226 100"/>
+            </g>
+            <path d="M169 95 C190 91 208 96 224 109 C203 111 186 109 169 95Z" fill="url(#fishFin)" stroke="#b4fff0" stroke-width="1.5"/>
+            <path d="M242 72 Q259 88 243 108" fill="none" stroke="#082d40" stroke-width="3"/>
+            <path d="M267 83 Q284 85 294 91 Q281 95 268 94" fill="#a3e7df" stroke="#d6fff7" stroke-width="1.5"/>
+            <circle cx="261" cy="78" r="7" fill="#061725"/>
+            <circle cx="263" cy="76" r="2.3" fill="#fff"/>
+            <path d="M105 74 Q151 48 204 63" fill="none" stroke="#f1fffb" stroke-opacity=".7" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="fish-light"></div>
+      </div>
+
+      <div class="hero-content">
+        <p class="eyebrow reveal">01 / THE ART OF FRESHWATER SUPPLY</p>
+        <h1 class="reveal">From our waters.<br><span>To your market.</span></h1>
+        <p class="hero-description reveal">Quality freshwater fish, dependable wholesale supply, and relationships built on trust — from Andhra Pradesh to markets across India.</p>
+        <div class="hero-actions reveal">
+          <a class="button button-primary" href="#products">Explore Our Fish <span>↗</span></a>
+          <a class="button button-ghost" href="#enquiry">Discuss Wholesale Supply</a>
+        </div>
+        <div class="hero-bottom reveal">
+          <span>FRESHWATER FISH SPECIALISTS</span>
+          <span>ANDHRA PRADESH, INDIA</span>
+        </div>
+      </div>
+      <div class="hero-side-note">QUALITY · CONSISTENCY · TRUST</div>
+    </section>
+
+    
+<!-- LEENA TRADERS SECTION DIVIDER -->
+<div class="leena-section-divider" aria-label="Leena Traders">
+  <span class="leena-divider-line"></span>
+  <span class="leena-divider-brand">
+    <span class="leena-divider-mark">LT</span>
+    <span class="leena-divider-name">LEENA TRADERS</span>
+  </span>
+  <span class="leena-divider-line"></span>
+</div>
+
+<!-- PREMIUM AQUATIC INTRO -->
+<section class="intro intro-premium section-pad" id="intro-story">
+  <div class="intro-aqua-bg" aria-hidden="true">
+    <span class="intro-orb intro-orb-one"></span>
+    <span class="intro-orb intro-orb-two"></span>
+    <span class="intro-bubble intro-bubble-one"></span>
+    <span class="intro-bubble intro-bubble-two"></span>
+    <span class="intro-bubble intro-bubble-three"></span>
+
+    <svg class="intro-floating-fish intro-floating-fish-one" viewBox="0 0 160 75">
+      <path d="M25 38 C49 7 101 10 125 38 C101 66 49 68 25 38Z" fill="#19c9bd" fill-opacity=".25" stroke="#087f99" stroke-opacity=".6" stroke-width="2"/>
+      <path d="M29 38 L3 15 L8 38 L3 61Z" fill="#087f99" fill-opacity=".35"/>
+      <path d="M64 20 Q76 38 64 55 M78 17 Q90 38 78 58" stroke="#eaffff" stroke-opacity=".65" stroke-width="2" fill="none"/>
+      <circle cx="110" cy="32" r="3" fill="#07344a"/>
+    </svg>
+
+    <svg class="intro-floating-fish intro-floating-fish-two" viewBox="0 0 160 75">
+      <path d="M25 38 C49 7 101 10 125 38 C101 66 49 68 25 38Z" fill="#ffbd83" fill-opacity=".24" stroke="#d58c65" stroke-opacity=".65" stroke-width="2"/>
+      <path d="M29 38 L3 15 L8 38 L3 61Z" fill="#d58c65" fill-opacity=".3"/>
+      <path d="M64 20 Q76 38 64 55 M78 17 Q90 38 78 58" stroke="#fff7e9" stroke-opacity=".65" stroke-width="2" fill="none"/>
+      <circle cx="110" cy="32" r="3" fill="#54352a"/>
+    </svg>
+  </div>
+
+  <div class="intro-premium-inner">
+    <div class="intro-premium-kicker">
+      <span class="intro-premium-number">01</span>
+      <span>BUILT AROUND YOUR BUSINESS</span>
+      <span class="intro-kicker-line"></span>
+      <span class="intro-kicker-status"><i></i> LEENA TRADERS</span>
+    </div>
+
+    <div class="intro-premium-grid">
+      <div class="intro-premium-left">
+        <span class="intro-roundel" aria-hidden="true">
+          <span class="intro-roundel-ring"></span>
+          <span class="intro-roundel-ring intro-roundel-ring-two"></span>
+          <span class="intro-roundel-fish">LT</span>
+          <span class="intro-roundel-caption">FRESHWATER · INDIA</span>
+        </span>
+
+        <div class="intro-floating-caption">
+          <span class="intro-caption-icon">✳</span>
+          <span>From our waters<br><strong>to your market.</strong></span>
+        </div>
+      </div>
+
+      <div class="intro-premium-copy">
+        <p class="intro-copy-eyebrow">OUR PROMISE · YOUR PARTNER</p>
+        <h2>More than a supply.<br><span>A trusted connection.</span></h2>
+        <p class="intro-premium-description">
+          We connect freshwater fish supply with the people who keep India's
+          markets moving — wholesalers, distributors, retailers and bulk buyers
+          looking for reliable business relationships.
+        </p>
+
+        <div class="intro-mini-features">
+          <div class="intro-mini-feature">
+            <span class="intro-mini-icon">↗</span>
+            <span><strong>Business focused</strong><small>Supply discussions built around your needs</small></span>
+          </div>
+          <div class="intro-mini-feature">
+            <span class="intro-mini-icon">❄</span>
+            <span><strong>Delivery planning</strong><small>Discuss packing and transport requirements</small></span>
+          </div>
+          <div class="intro-mini-feature">
+            <span class="intro-mini-icon">◇</span>
+            <span><strong>Built on trust</strong><small>Clear communication and lasting relationships</small></span>
+          </div>
+        </div>
+
+        <a class="intro-premium-link" href="#story">
+          Discover Leena Traders <span>↗</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="intro-premium-bottom">
+      <span>FRESHWATER FISH SPECIALISTS</span>
+      <span class="intro-bottom-dot"></span>
+      <span>WHOLESALE &amp; BULK SUPPLY</span>
+      <span class="intro-bottom-dot"></span>
+      <span>ANDHRA PRADESH, INDIA</span>
+    </div>
+  </div>
+</section>
+
+<!-- LEENA TRADERS SECTION DIVIDER -->
+<div class="leena-section-divider" aria-label="Leena Traders">
+  <span class="leena-divider-line"></span>
+  <span class="leena-divider-brand">
+    <span class="leena-divider-mark">LT</span>
+    <span class="leena-divider-name">LEENA TRADERS</span>
+  </span>
+  <span class="leena-divider-line"></span>
+</div>
+
+
+    <!-- MOVING TICKER -->
+    <div class="ticker" aria-label="Freshwater fish, wholesale supply, built on trust, markets across India">
+      <div class="ticker-track">
+        <span>FRESHWATER FISH</span><b>✳</b><span>WHOLESALE SUPPLY</span><b>✳</b><span>BUILT ON TRUST</span><b>✳</b><span>MARKETS ACROSS INDIA</span><b>✳</b>
+        <span>FRESHWATER FISH</span><b>✳</b><span>WHOLESALE SUPPLY</span><b>✳</b><span>BUILT ON TRUST</span><b>✳</b><span>MARKETS ACROSS INDIA</span><b>✳</b>
+      </div>
+    </div>
+
+<!-- LEENA TRADERS SECTION DIVIDER -->
+<div class="leena-section-divider" aria-label="Leena Traders">
+  <span class="leena-divider-line"></span>
+  <span class="leena-divider-brand">
+    <span class="leena-divider-mark">LT</span>
+    <span class="leena-divider-name">LEENA TRADERS</span>
+  </span>
+  <span class="leena-divider-line"></span>
+</div>
+
+    <!-- PRODUCTS -->
+    <section class="products section-pad" id="products">
+      <div class="section-heading reveal">
+        <div>
+          <p class="eyebrow">02 / OUR SELECTION</p>
+          <h2>Meet the <span>catch.</span></h2>
+        </div>
+        <p>Freshwater varieties for wholesale buyers and bulk orders.</p>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card reveal">
+          <div class="product-photo fish-rohu">
+            <img src="images/rohu-fish.jpg" alt="Fresh Rohu freshwater fish" loading="lazy">
+            <span class="product-index">01</span>
+            <span class="product-tag">FRESHWATER</span>
+          </div>
+          <div class="product-info">
+            <div><h3>Rohu</h3><p><em>Labeo rohita</em></p></div>
+            <button class="product-enquire" data-product="Rohu" type="button" aria-label="Enquire about Rohu">↗</button>
+          </div>
+          <p class="product-description">A popular freshwater choice for markets and distributors.</p>
+        </article>
+
+        <article class="product-card reveal">
+          <div class="product-photo fish-catla">
+            <img src="images/catla-fish.jpg" alt="Fresh Catla freshwater fish" loading="lazy">
+            <span class="product-index">02</span>
+            <span class="product-tag">FRESHWATER</span>
+          </div>
+          <div class="product-info">
+            <div><h3>Catla</h3><p><em>Catla catla</em></p></div>
+            <button class="product-enquire" data-product="Catla" type="button" aria-label="Enquire about Catla">↗</button>
+          </div>
+          <p class="product-description">A familiar market favourite for bulk fish supply.</p>
+        </article>
+
+        <article class="product-card reveal">
+          <div class="product-photo fish-pangasius">
+            <img src="images/pangus-fish.jpg" alt="Fresh Pangus freshwater fish" loading="lazy">
+            <span class="product-index">03</span>
+            <span class="product-tag">FRESHWATER</span>
+          </div>
+          <div class="product-info">
+            <div><h3>Pangus</h3><p><em>Pangasius</em></p></div>
+            <button class="product-enquire" data-product="Pangus" type="button" aria-label="Enquire about Pangus">↗</button>
+          </div>
+          <p class="product-description">A versatile variety for commercial seafood markets.</p>
+        </article>
+
+        <article class="product-card reveal">
+          <div class="product-photo fish-rupchand">
+            <img src="images/roopchand-fish.jpg" alt="Fresh Roopchand freshwater fish" loading="lazy">
+            <span class="product-index">04</span>
+            <span class="product-tag">FRESHWATER</span>
+          </div>
+          <div class="product-info">
+            <div><h3>Roopchand</h3><p><em>Freshwater fish</em></p></div>
+            <button class="product-enquire" data-product="Roopchand" type="button" aria-label="Enquire about Roopchand">↗</button>
+          </div>
+          <p class="product-description">Available for enquiries from wholesale buyers.</p>
+        </article>
+
+        <!-- 05. Mrigal -->
+        <article class="product-card reveal">
+          <div class="product-photo fish-mrigal">
+            <img src="images/mrigal-fish.jpg" alt="Mrigal freshwater fish" loading="lazy">
+            <span class="product-index">05</span>
+            <span class="product-tag">FRESHWATER</span>
+          </div>
+          <div class="product-info">
+            <div><h3>Mrigal</h3><p><em>Cirrhinus mrigala</em></p></div>
+            <button class="product-enquire" data-product="Mrigal" type="button" aria-label="Enquire about Mrigal">↗</button>
+          </div>
+          <p class="product-description">A popular Indian carp variety for wholesale fish markets.</p>
+        </article>
+
+        <!-- 06. Murrel -->
+        <article class="product-card reveal">
+          <div class="product-photo fish-murrel">
+            <img src="images/murrel-fish.jpg" alt="Murrel freshwater fish" loading="lazy">
+            <span class="product-index">06</span>
+            <span class="product-tag">FRESHWATER</span>
+          </div>
+          <div class="product-info">
+            <div><h3>Murrel</h3><p><em>Channa</em> species</p></div>
+            <button class="product-enquire" data-product="Murrel" type="button" aria-label="Enquire about Murrel">↗</button>
+          </div>
+          <p class="product-description">A sought-after freshwater fish; availability depends on supply.</p>
+        </article>
+
+        <!-- 07. Tilapia -->
+        <article class="product-card reveal">
+          <div class="product-photo fish-tilapia">
+            <img src="images/tilapia-fish.jpg" alt="Tilapia fish" loading="lazy">
+            <span class="product-index">07</span>
+            <span class="product-tag">FRESHWATER</span>
+          </div>
+          <div class="product-info">
+            <div><h3>Tilapia</h3><p><em>Oreochromis</em> species</p></div>
+            <button class="product-enquire" data-product="Tilapia" type="button" aria-label="Enquire about Tilapia">↗</button>
+          </div>
+          <p class="product-description">A farmed freshwater variety for commercial buyers.</p>
+        </article>
+
+        <!-- 08. Grass Carp -->
+        <article class="product-card reveal">
+          <div class="product-photo fish-grasscarp">
+            <img src="images/grasscarp-fish.jpg" alt="Grass carp fish" loading="lazy">
+            <span class="product-index">08</span>
+            <span class="product-tag">FRESHWATER</span>
+          </div>
+          <div class="product-info">
+            <div><h3>Grass Carp</h3><p><em>Ctenopharyngodon idella</em></p></div>
+            <button class="product-enquire" data-product="Grass Carp" type="button" aria-label="Enquire about Grass Carp">↗</button>
+          </div>
+          <p class="product-description">A recognised freshwater aquaculture species.</p>
+        </article>
+      </div>
+
+      <p class="product-note">Availability, size, packing and minimum order quantities are confirmed individually. Contact us for current supply details.</p>
+    </section>
+
+    
+
+<!-- LEENA TRADERS SECTION DIVIDER -->
+<div class="leena-section-divider" aria-label="Leena Traders">
+  <span class="leena-divider-line"></span>
+  <span class="leena-divider-brand">
+    <span class="leena-divider-mark">LT</span>
+    <span class="leena-divider-name">LEENA TRADERS</span>
+  </span>
+  <span class="leena-divider-line"></span>
+</div>
+
+
+<!-- LEENA TRADERS — SINGLE PLATTER STORY SECTION -->
+<section class="story-platter-section" id="story">
+  <img
+    class="story-platter-image"
+    src="images/leena-story-showcase.png"
+    alt="Leena Traders freshwater fish collection on a single chilled platter, with wholesale supply and distribution information"
+    loading="lazy"
+  >
+  <a
+    class="story-platter-cta"
+    href="#enquiry"
+    aria-label="Start a wholesale enquiry"
+  ></a>
+</section>
+
+
+<!-- LEENA TRADERS SECTION DIVIDER -->
+<div class="leena-section-divider" aria-label="Leena Traders">
+  <span class="leena-divider-line"></span>
+  <span class="leena-divider-brand">
+    <span class="leena-divider-mark">LT</span>
+    <span class="leena-divider-name">LEENA TRADERS</span>
+  </span>
+  <span class="leena-divider-line"></span>
+</div>
+
+<!-- DISTRIBUTION — FULL-WIDTH COLD-CHAIN IMAGE -->
+<section class="distribution-image-section" id="distribution">
+  <img
+    class="distribution-full-image"
+    src="images/cold-chain-distribution.png"
+    alt="Leena Traders refrigerated fish transport from Andhra Pradesh to Northeast India"
+    loading="lazy"
+  >
+
+  <a class="distribution-image-link" href="#enquiry"
+     aria-label="Discuss wholesale fish supply requirements"></a>
+</section>
+
+
+<div class="leena-section-divider" aria-label="Leena Traders">
+  <span class="leena-divider-line"></span>
+  <span class="leena-divider-brand">
+    <span class="leena-divider-mark">LT</span>
+    <span class="leena-divider-name">LEENA TRADERS</span>
+  </span>
+  <span class="leena-divider-line"></span>
+</div>
+
+
+    <!-- ENQUIRY FORM -->
+    <section class="enquiry section-pad" id="enquiry">
+      <div class="enquiry-intro reveal">
+        <p class="eyebrow">05 / START A CONVERSATION</p>
+        <h2>Let's talk<br><span>wholesale.</span></h2>
+        <p>Share your requirements and we'll prepare a message for you to send directly to our business WhatsApp.</p>
+        <div class="enquiry-note">
+          <span class="enquiry-note-icon">↗</span>
+          <p><strong>Direct business enquiries</strong><br>Tell us your fish variety, quantity and delivery location.</p>
+        </div>
+      </div>
+
+      <form class="enquiry-form reveal" id="enquiryForm">
+        <div class="form-heading"><span>WHOLESALE ENQUIRY</span><span>LET'S CONNECT ↗</span></div>
+
+        <label for="customerName">Your name</label>
+        <input id="customerName" name="name" type="text" placeholder="Enter your full name" autocomplete="name" required>
+
+        <label for="customerPhone">Phone number</label>
+        <input id="customerPhone" name="phone" type="tel" placeholder="Your contact number" autocomplete="tel" required>
+
+        <label for="fishVariety">Fish variety</label>
+        <select id="fishVariety" name="product" required>
+          <option value="">Select a fish variety</option>
+          <option value="Rohu">Rohu</option>
+          <option value="Catla">Catla</option>
+          <option value="Pangasius / Pangus">Pangasius / Pangus</option>
+          <option value="Rupchand">Rupchand</option>
+          <option value="Mrigal">Mrigal</option>
+          <option value="Murrel">Murrel</option>
+          <option value="Tilapia">Tilapia</option>
+          <option value="Grass Carp">Grass Carp</option>
+          <option value="Multiple varieties">Multiple varieties</option>
+        </select>
+
+        <label for="quantity">Required quantity</label>
+        <input id="quantity" name="quantity" type="text" placeholder="e.g. 500 kg or 2 tonnes" required>
+
+        <label for="deliveryLocation">Delivery city / state</label>
+        <input id="deliveryLocation" name="location" type="text" placeholder="Where do you need the supply?" required>
+
+        <button class="button button-primary form-submit" type="submit">Prepare WhatsApp Enquiry <span>↗</span></button>
+        <p class="form-disclaimer">WhatsApp will open with your enquiry ready to review and send.</p>
+      </form>
+    </section>
+
+    <!-- CLOSING -->
+    <section class="closing-band">
+      <p class="eyebrow">LEENA TRADERS · ANDHRA PRADESH, INDIA</p>
+      <h2>Built on trust.<br><span>Moving markets.</span></h2>
+      <a class="button button-light" href="#enquiry">Start an Enquiry ↗</a>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#home">
+      <span class="brand-mark">LT</span>
+      <span class="brand-name">LEENA <strong>TRADERS</strong></span>
+    </a>
+    <p>Freshwater fish. Trusted supply.</p>
+    <span>© <span id="currentYear"></span> Leena Traders</span>
+  </footer>
+
+</body>
+</html>
