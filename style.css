@@ -5721,3 +5721,50 @@ main .closing-band .button-light {
     -webkit-text-fill-color: #103344 !important;
   }
 }
+/* ========================================
+   GLOBAL TYPOGRAPHY — SLIGHTLY LARGER
+   ======================================== */
+
+html {
+  font-size: 110%;
+}
+
+body {
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+/* Paragraphs and descriptive text */
+p,
+li,
+label,
+input,
+textarea,
+select {
+  font-size: 1.05rem;
+}
+
+/* Navigation */
+nav a,
+.nav-link {
+  font-size: 1.05rem;
+}
+
+/* Buttons */
+button,
+.btn,
+.button {
+  font-size: 1.02rem;
+}
+
+/* Small supporting text */
+small {
+  font-size: 0.9rem;
+}
+
+/* Mobile readability */
+@media (max-width: 768px) {
+  body {
+    line-height: 1.65;
+  }
+}
